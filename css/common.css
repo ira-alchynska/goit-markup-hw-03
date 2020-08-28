@@ -1,0 +1,88 @@
+:root {
+  --white: #ffffff;
+  --active: #2196f3;
+  --black: #000000;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --gray-bgc: #f5f4fa;
+  --mailito: rgba(255, 255, 255, 0.6);
+}
+body {
+  color: var(--primary-text);
+  background-color: var(--white);
+}
+.list {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* цвет основного текста 212121 */
+/* вторичный цвет текста 757575 */
+/* цвет логотипа 000000; 2196F3 */
+/* белый цвет FFFFFF */
+/* цвет адреса FFFFFF 0.6 */
+/* background color E5E5E5 */
+/* background header FFFFFF */
+/* second background color F5F4FA */
+/* background footer 2F303A */
+
+/* лого */
+
+.logo > span {
+  color: var(--active);
+}
+.logo {
+  color: var(--black);
+}
+.logo:hover,
+.logo:focus
+
+/* site-nav */
+.site-nav .link {
+  color: var(--primary-text);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--active);
+}
+.site-nav .link.current {
+  color: var(--active);
+}
+
+/*адрес*/
+.auth-nav > a[href^="tel"] {
+  color: var(--secondary-text);
+}
+.auth-nav > a[href^="tel"]:hover,
+.auth-nav > a[href^="tel"]:focus {
+  color: var(--active);
+}
+.auth-nav > a[href^="mailito"] {
+  color: var(--secondary-text);
+}
+.auth-nav > a[href^="mailito"]:hover,
+.auth-nav > a[href^="mailito"]:focus {
+  color: var(--active);
+}
+/*футер*/
+.logo > span {
+  color: var(--active);
+}
+.logo {
+  color: var(--black);
+}
+/*адрес*/
+.address {
+  color: var(--white);
+}
+a[href^="tel"] {
+  color: rgba(255, 255, 255, 0.6);
+}
+a[href^="mailito"] {
+  color: rgba(255, 255, 255, 0.6);
+}
+footer {
+  background-color: #2f303a;
+}
