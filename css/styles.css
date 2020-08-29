@@ -55,13 +55,14 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .flexbox {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .section {
@@ -194,9 +195,7 @@ text-align: center;
 }
 
 /*секция преимущества*/
-.feature-list {
-  display: flex;
-}
+
 .flex-element:not(:last-child) {
   margin-right: 30px;
 }
@@ -229,12 +228,12 @@ text-align: center;
   text-align: center;
 }
 .work-photo {
-  width: calc((100% - 30px) / 3);
+  width: calc((100% - 30px * 2) / 3);
 }
 .work-photo:not(:last-child) {
   margin-right: 30px;
-   max-width: 370px;
-   max-height: 294px;
+  width: 370px;
+  height: 294px;
 }
 
 /*команда*/
@@ -253,19 +252,21 @@ text-align: center;
   font-size: 16px;
   line-height: 1.18;
 }
-
-.team-box {
-  width: calc((100% - 30px) / 4);
-}
-.team-box:not(:last-child) {
+.team-box:not(:nth-child(4n)) {
   margin-right: 30px;
 }
+.team-box {
+  width: calc ((100% - 30px * 3) / 4);
+}
+
+
 .team-pecture {
   width: 270px;
   height: 260px;
   padding: 0px 0px;
   margin-top: 0px;
   margin-bottom: 30px;
+  
 }
 .team-name {
   margin-top: 0px;
@@ -281,32 +282,69 @@ text-align: center;
 }
 
 /*футер*/
+
+
 .logo > span {
   color: var(--active);
 }
 .logo .logo-white {
+  margin-bottom: 20px;
   color: var(--white);
-
 }
 /*адрес*/
 .address {
   color: var(--white);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
-.address > a {color: rgba(255, 255, 255, 0.6);}
-.address > a:hover,
-.address > a:focus { color: var(--active);}
-
-footer {
+.address .link {
+  margin-bottom: 9px;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--ftr-bcg);
 }
-.pictures {
-  color: var(--primary-text);
+
+.footer .logo {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
 }
-.filter-button { color: var(--primary-text);
+
+
+
+/*страница портфолио*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.filter-button { 
+  display: block;
+  border-color: var(--active);
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-right: 8px;
+  margin-bottom: 50px;
+  min-width: 145px;
+  text-align: center;
+  border: 1px solid transparent;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.625;
+  color: var(--primary-text);
   background-color: var(--gray-bgc);
 border-color: var(--gray-bgc);}
+
 .filter-button:hover,
 .filter-button:focus {
   color: var(--active);
@@ -315,7 +353,20 @@ border-color: var(--gray-bgc);}
   background-color: var(--active);
   color: var(--white);
 }
-
-button {
-  font-family: inherit;
+.filter {
+  justify-content: center;
 }
+
+.team-name {
+  color: var(--primary-text);
+}
+
+.portfolio {
+ width: calc((100% - 30px *2) / 3);
+}
+
+
+
+
+
+
