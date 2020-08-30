@@ -75,7 +75,7 @@ img {
 align-items: center;
 justify-content: flex-end;
 }
-.page-header {
+ {
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -85,6 +85,8 @@ justify-content: flex-end;
   margin-right: 93px;
 }
 .logo > span {
+  padding-top: 25px;
+  padding-bottom: 25px;
   color: var(--active);
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -93,6 +95,8 @@ justify-content: flex-end;
   line-height: 1.19;
 }
 .logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
   color: var(--black);
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -124,6 +128,8 @@ justify-content: flex-end;
 }
 .site-nav .link { 
   display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
   color: var(--primary-text);
 font-weight: 500;
 font-size: 14px;
@@ -154,7 +160,7 @@ color: var(--secondary-text);
  .auth-nav .link:focus {
   color: var(--active);
 }
- .auth-nav .mail {
+ .contacts:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -357,7 +363,6 @@ border-radius: 0px 0px 4px 4px;
   border-color: var(--active);
   border-radius: 4px;
   padding: 6px 22px;
-   margin-bottom: 50px;
   text-align: center;
   border: 1px solid transparent;
 font-weight: 500;
@@ -380,6 +385,7 @@ border-color: var(--gray-bgc);}
 }
 .filter {
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .team-name {
